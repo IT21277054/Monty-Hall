@@ -2,26 +2,56 @@
   <div class="row justify-content-center">
     <div class="col-md-3">
       <div class="card shadow-sm text-center">
-        <img src="https://pics.clipartpng.com/Door_PNG_Clipart-2407.png" class="card-img-top" alt="Door Image">
+        <img
+          src="https://pics.clipartpng.com/midle/Door_PNG_Clipart-2407.png"
+          class="card-img-top"
+          alt="Door Image"
+        />
         <div class="card-body">
-          <button type="button" class="btn btn-outline-secondary" (click)="chooseDoor(0)">A</button>
+          <button
+            type="button"
+            class="btn btn-outline-secondary"
+            (click)="chooseDoor(0)"
+          >
+            A
+          </button>
         </div>
       </div>
     </div>
 
     <div class="col-md-3">
       <div class="card shadow-sm text-center">
-        <img src="https://pics.clipartpng.com/Door_PNG_Clipart-2407.png" class="card-img-top" alt="Door Image">
+        <img
+          src="https://pics.clipartpng.com/midle/Door_PNG_Clipart-2407.png"
+          class="card-img-top"
+          alt="Door Image"
+        />
         <div class="card-body">
-          <button type="button" class="btn btn-outline-secondary" (click)="chooseDoor(1)">B</button>
+          <button
+            type="button"
+            class="btn btn-outline-secondary"
+            (click)="chooseDoor(1)"
+          >
+            B
+          </button>
         </div>
       </div>
     </div>
     <div class="col-md-3">
       <div class="card shadow-sm text-center">
-        <img src="https://pics.clipartpng.com/Door_PNG_Clipart-2407.png" class="card-img-top" alt="Door Image">
+        <img
+          src="https://pics.clipartpng.com/midle/Door_PNG_Clipart-2407.png"
+          class="card-img-top"
+          alt="Door Image"
+        />
         <div class="card-body">
-          <button type="button" class="btn btn-outline-secondary" (click)="chooseDoor(2)">C</button>
+          <button
+            type="button"
+            class="btn btn-outline-secondary"
+            (click)="chooseDoor(2)"
+          >
+            C
+          </button>
         </div>
       </div>
     </div>
@@ -29,28 +59,52 @@
 </div>
 
 <!-- Modal -->
-<div class="modal" tabindex="-1" role="dialog" [ngClass]="{'show': showModal}" [style.display]="showModal ? 'block' : 'none'">
-  <div class="modal-dialog d-flex align-items-center justify-content-center" role="document">
+<div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [ngClass]="{ show: showModal }"
+  [style.display]="showModal ? 'block' : 'none'"
+>
+  <div
+    class="modal-dialog d-flex align-items-center justify-content-center"
+    role="document"
+  >
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">{{modalTitle}}</h5>
-        <button type="button" class="close" (click)="closeModal()" aria-label="Close">
+        <h5 class="modal-title">{{ modalTitle }}</h5>
+        <button
+          type="button"
+          class="close"
+          (click)="closeModal()"
+          aria-label="Close"
+        >
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <img src= {{imageUrl}} alt="Popup Image" class="img-fluid">
-        <p>{{discription}}</p>
+        <img src="{{ imageUrl }}" alt="Popup Image" class="img-fluid" />
+        <p>{{ discription }}</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" (click)="choice('yes')" *ngIf="!hideButtons">Switch</button>
-        <button type="button" class="btn btn-primary" (click)="choice('no')" *ngIf="!hideButtons">Keep</button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          (click)="choice('yes')"
+          *ngIf="!hideButtons"
+        >
+          Switch
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          (click)="choice('no')"
+          *ngIf="!hideButtons"
+        >
+          Keep
+        </button>
       </div>
     </div>
   </div>
 </div>
 <div class="modal-backdrop fade show" *ngIf="showModal"></div>
-
-
-
-

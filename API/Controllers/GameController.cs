@@ -33,7 +33,6 @@ public class GameController
     [HttpGet("choice/{choice}/{car}/{pick}")]
     public ActionResult<int> getOutcome(string choice,int car, int pick)
     {
-        Console.WriteLine("i was called yea");
         bool isCarPick = pick == car;
 
         if (isCarPick)

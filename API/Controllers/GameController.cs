@@ -12,6 +12,7 @@ public class GameController
     [HttpGet("pick/{pick}")]
     public ActionResult<Values> setPick(int pick)
     {
+        
         Random rnd = new Random();
         int car = rnd.Next(3);
         int goat = 0;
@@ -32,6 +33,7 @@ public class GameController
     [HttpGet("choice/{choice}/{car}/{pick}")]
     public ActionResult<int> getOutcome(string choice,int car, int pick)
     {
+        Console.WriteLine("i was called yea");
         bool isCarPick = pick == car;
 
         if (isCarPick)

@@ -11,7 +11,7 @@ import { DoorsComponent } from './doors/doors.component';
   declarations: [
     AppComponent,
     NavComponent,
-    DoorsComponent
+    DoorsComponent,
   ],
   imports: [
     BrowserModule,

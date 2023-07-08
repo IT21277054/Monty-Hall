@@ -8,14 +8,20 @@ This app provides users with an opportunity to explore the Monty Hall problem th
 #Instructions
 
 1.Open a command prompt or terminal.
+
 2.Navigate to the Angular app directory:
     cd Client
+    
 3.Install the app's dependencies:
     npm install
+    
 4.Start the Angular development server:
     ng serve
+    
 5.Open a new command prompt or terminal.
+
 6.Navigate to the .NET API directory:
     cd API
+    
 7.Run the .NET backend server:
     dotnet run

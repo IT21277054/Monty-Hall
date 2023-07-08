@@ -5,6 +5,7 @@ The Monty Hall problem is a probability puzzle named after the host of the popul
 
 This app provides users with an opportunity to explore the Monty Hall problem through simulations. Users can interact with the app's intuitive user interface, make their initial door selections, and choose whether to switch their selection or stay with it. The app then runs simulations based on these choices, providing insights into the probability outcomes and helping users understand the mathematical reasoning behind the problem.
 
+
 #Instructions
 
 1.Open a command prompt or terminal.
